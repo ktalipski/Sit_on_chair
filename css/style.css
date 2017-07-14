@@ -1,0 +1,39 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+header{
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, rgba(233,238,241,1) 0%, rgba(233,238,241,1) 24%, rgba(196,209,217,1) 98%, rgba(251,253,254,1) 100%);
+}
+.container{
+width: 1000px;
+border: 1px solid red; /*do wywalenia*/
+margin: 0 auto;
+}
+h1{
+  text-transform: uppercase;
+  font-weight: 1000;
+}
+#header_div{
+  float: right;
+  width: 300px;
+  border: 1px solid blue;
+}
+#main_buttom{
+  width: 150px;
+  height: 50px;
+  background-color: Aquamarine;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+#inside_buttom{
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 15px;
+}
+#header_descript{
+  font-size: 10px;
+  text-align: center;
+}
