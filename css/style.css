@@ -1,31 +1,83 @@
 body{
   font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
 }
-header{
-  width: 100%;
-  height: 500px;
-  background: linear-gradient(to bottom, rgba(233,238,241,1) 0%, rgba(233,238,241,1) 24%, rgba(196,209,217,1) 98%, rgba(251,253,254,1) 100%);
+#like_logo{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800px;
+  font-size: 15px;
+  width: 200px;
+  margin-left: 15px;
+  padding-top: 10px;
+}
+.head_text{
+  color: mediumaquamarine;
+  font-weight: 800;
 }
 .container{
-width: 1000px;
-border: 1px solid red; /*do wywalenia*/
+width: 1200px;
 margin: 0 auto;
+padding-left: 5px;
+padding-right: 5px;
 }
-h1{
+.container::after{
+clear: both;
+display: block;
+content: "";
+}
+header{
+  background-color: black;
+  height: 70px;
+}
+ul::after{
+  clear: both;
+  display: block;
+  content: "";
+}
+#black{
+  color: black;
+}
+header ul{
+  height: 80px;
+  list-style: none;
+  display: inline-block;
+  word-spacing: 35px;
+  margin-left: 850px;
+  height: 50px;
+}
+header li{
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+}
+
+/*section 1*/
+
+#section1{
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(to bottom, rgba(233,238,241,1) 0%, rgba(233,238,241,1) 24%, rgba(196,209,217,1) 98%, rgba(251,253,254,1) 100%);
+}
+#main_text2{
   text-transform: uppercase;
-  font-weight: 1000;
+  font-weight: 800px;
+  text-align: center;
+  font-size: 30px;
 }
-#header_div{
-  float: right;
-  width: 300px;
-  border: 1px solid blue;
+#black_chair{
+  margin-top: 45px;
 }
 #main_buttom{
   width: 150px;
   height: 50px;
-  background-color: Aquamarine;
+  background-color: mediumaquamarine;
   border-radius: 5px;
   padding: 5px 0;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 #inside_buttom{
   color: white;
@@ -33,7 +85,390 @@ h1{
   text-align: center;
   font-size: 15px;
 }
-#header_descript{
-  font-size: 10px;
-  text-align: center;
+#section1_div{
+  float: right;
+  width: 350px;
+  margin-right: 150px;
+  margin-top: 80px;
 }
+#section1_descript{
+  font-size: 17px;
+  text-align: center;
+  font-weight: 400;
+}
+
+/*section 2*/
+
+#section2{
+  height: 300px;
+  margin: 0 auto;
+}
+#features {
+  margin: 30px auto;
+}
+.photo_box {
+  background-position: cover;
+  height: 230px;
+  width: 330px;
+  float: left;
+}
+#seven_nation_army {
+  background-image: url("images/box1_img.jpg");
+}
+#black_math {
+  margin-left: 100px;
+  margin-right: 100px;
+  background-image: url("images/box2_img.jpg");
+}
+#in_the_cold_cold_night {
+  border: 1px solid LightGrey;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.photo_box_text {
+  width: 140px;
+  padding: 0px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  border-width: 0px 0px 6px 0px;
+  border-color: mediumaquamarine;
+  border-style: solid;
+  margin: 10px 0px 0px 10px;
+}
+#description {
+  font-size: 14px;
+  margin: 10px 10px;
+}
+.the_white_stripes {
+  background-color: rgba(255, 255, 255, .5);
+  padding: 2px 0px 2px 0px;
+  margin-top: 170px;
+  width: 100%;
+  height: 40px;
+}
+
+/*section 3*/
+
+#section3 {
+   width: 100%;
+   height: 1200px;
+   background-color: 	rgb(230, 230, 230);
+}
+#section3 h2 {
+   padding-top: 40px;
+   font-weight: 500;
+   margin-left: 115px;
+   color: gray;
+}
+.text_line {
+   height: 8px;
+   margin-left: 70px;
+   width: 300px;
+   background-color: mediumaquamarine;
+}
+.price_box {
+   border: 2px solid lightgray;
+   width: 300px;
+   height: 520px;
+   margin: 50px 75px;
+   background-color: whitesmoke;
+   display: inline-block;
+   float: left;
+}
+.middle_box {
+   border: 2px solid mediumaquamarine;
+   width: 300px;
+   height: 520px;
+   display: inline-block;
+   background-color: mediumaquamarine;
+   float: left;
+   margin: 50px -15px;
+}
+.ball_out {
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   border: 2px solid lightgray;
+   position: relative;
+   left: 125px;
+   bottom: 30px;
+   background-color: white;
+}
+.ball_inside {
+  position: absolute;
+   width: 25px;
+   height: 25px;
+   border-radius: 100%;
+   background-color: lightgray;
+   margin: auto;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+.ball_out_middle {
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   border: none;
+   position: relative;
+   left: 125px;
+   bottom: 30px;
+   background-color: mediumaquamarine;
+}
+.ball_inside_middle {
+   width: 25px;
+   height: 25px;
+   border-radius: 100%;
+   background-color: white;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+}
+.ball_price {
+  background-color: white;
+  border: 2px solid lightgray;
+  border-radius: 100%;
+   width: 110px;
+   height: 110px;
+   position: relative;
+   left: 90px;
+   bottom: 70px;
+   text-align: center;
+}
+.middle_box_price {
+   width: 110px;
+   height: 110px;
+   border-radius: 100%;
+   border: 2px solid mediumaquamarine;
+   position: relative;
+   left: 90px;
+   bottom: 70px;
+   background-color: white;
+   text-align: center;
+}
+.text_box {
+   color: mediumaquamarine;
+   width: 100%;
+   text-align: center;
+   font-size: 22px;
+   font-weight: 400;
+   margin-top: 70px;
+   width: 300px;
+   position: relative;
+   bottom: 90px;
+}
+.middle_text {
+   color: white;
+   width: 100%;
+   margin-top: 70px;
+   position: relative;
+   text-align: center;
+   font-weight: 400;
+   font-size: 22px;
+   width: 300px;
+   bottom: 90px;
+}
+.ball_price p {
+   color: darkgray;
+   font-size: 25px;
+   font-weight: 700;
+}
+.middle_box_price p {
+   color: mediumaquamarine;
+   font-size: 25px;
+   font-weight: 700;
+}
+.ball_price span {
+   bottom: 10px;
+   position: relative;
+   color: darkgray;
+   font-size: 15px;
+   font-weight: 700;
+   margin-bottom: 40px;
+}
+
+.middle_box_price span {
+   color: mediumaquamarine;
+   font-size: 15px;
+   font-weight: 700;
+   margin-bottom: 40px;
+   position: relative;
+   bottom: 10px;
+}
+
+.dark_gray_line {
+  background-color: lightgray;
+   width: 100%;
+   padding: 10px 0;
+   text-align: center;
+   color: gray;
+   font-size: 20px;
+   margin: 0 auto;
+}
+
+.gray_line {
+   width: 100%;
+   background-color: rgb(235,235,235);
+   padding: 10px 0;
+   text-align: center;
+   color: gray;
+   font-size: 20px;
+   margin: 0 auto;
+}
+
+.white_line {
+   width: 100%;
+   padding: 10px 0;
+   background-color: white;
+   text-align: center;
+   color: gray;
+   font-size: 20px;
+   margin: 0 auto;
+}
+
+#green_left_button {
+   width: 120px;
+   height: 30px;
+   border: none;
+   border-radius: 10px;
+   position: relative;
+   top: 100px;
+   left: 90px;
+   background-color: mediumaquamarine;
+   color: white;
+}
+
+#green_right_button {
+   width: 120px;
+   height: 30px;
+   border: none;
+   border-radius: 10px;
+   position: relative;
+   top: 14px;
+   left: 90px;
+   background-color: mediumaquamarine;
+   color: white;
+}
+
+.white_button {
+   width: 120px;
+   height: 30px;
+   border: none;
+   border-radius: 10px;
+   position: relative;
+   top: 60px;
+   left: 90px;
+   background-color: white;
+   color: mediumaquamarine;
+}
+
+/*section 4*/
+
+#section4{
+  background-color: white;
+}
+.form1 {
+  width: 65%;
+  margin-top: 20px;
+  float: left;
+}
+.form1 input {
+  display: block;
+}
+.form2 {
+  float: left;
+  width: 35%;
+  margin-top: 20px;
+  color: grey;
+}
+#redChair {
+  display: block;
+  margin-left: 30px;
+}
+.form1 input {
+  width: 600px;
+  height: 67px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: grey;
+  border: 1px solid MediumAquamarine;
+}
+.form1 textarea {
+  width: 600px;
+  height: 221px;
+  margin-bottom: 10px;
+  resize: none;
+  background-color: white;
+  border: 1px solid MediumAquamarine;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: grey;
+}
+.form2 .btn {
+  padding: 10px 90px 10px 90px;
+  font-size: 20px;
+  background-color: MediumAquamarine;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
+  border-radius: 10px;
+  margin-top: 45px;
+  margin-left: 50px;
+}
+.check_box {
+  display: none;
+}
+.check_box+label {
+  display: inline-block;
+  background: url("images/form_ok.jpg") no-repeat;
+  height: 40px;
+  width: 48px;
+  border: 1px solid MediumAquamarine;
+}
+
+.check_box:checked{
+  background: url('../images/form_ok.jpg') no-repeat;
+  height: 40px;
+  width: 48px;
+  display: inline-block;
+}
+
+.check_Ok {
+  display: inline;
+  float: left;
+  padding-top: 30px;
+  padding-left: 20px;
+  color: grey;
+}
+
+/*footer*/
+
+ footer {
+   color: grey;
+   margin-top: 30px;
+ }
+ footer p, .logo {
+   display: inline-block;
+ }
+ footer p {
+   font-size: 12px;
+   word-spacing: 3px;
+   padding-bottom: 35px;
+ }
+ footer p:last-of-type {
+   margin-right: 50px;
+   margin-top: 15px;
+   font-size: 16px;
+   float: right;
+ }
+ footer span {
+   font-weight: bold;
+ }
+ .logo{
+ margin-left: 320px;
+ }
