@@ -91,9 +91,13 @@ ul > li {
   text-align: center;
   font-size: 30px;
 }
-#black_chair{
-  margin-top: 45px;
+.container_img{
+  display: inline-block;
+  margin-top: 25px;
+  width: 400px;
+  height: 470px;
 }
+
 #main_buttom{
   width: 150px;
   height: 50px;
@@ -111,6 +115,7 @@ ul > li {
   font-size: 15px;
 }
 #section1_div{
+  box-sizing: border-box;
   float: right;
   width: 350px;
   margin-right: 150px;
@@ -176,8 +181,8 @@ ul > li {
 
 #section3 {
    width: 100%;
-   height: 1200px;
-   background-color: 	rgb(230, 230, 230);
+   height: 1000px;
+   background-color: rgb(230, 230, 230);
 }
 #section3 h2 {
    padding-top: 40px;

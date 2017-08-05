@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery_functions.js"></script>
+  
 </head>
 <body>
     <header>
@@ -34,7 +37,17 @@
 
   <section id="section1">
     <div class="container">
-      <img id="black_chair" src ="css/images/black_chair.png">
+      <div class=container_img>
+              <!--SLIDER-->
+        <img class="mySlides" src ="css/images/black_chair.png">   
+        <img class="mySlides" src ="css/images/orange.png"> 
+        <img class="mySlides" src ="css/images/red.png"> 
+        
+        <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="btn-right" onclick="plusDivs(+1)">&#10095;</button>
+              <!--end_SLIDER-->
+
+      </div>  
         <div id="section1_div">
           <div id="main_text2"> sit <span class="head_text"> on </span> our <span class="head_text"> chair </span> </div>
             <p id="section1_descript">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Lorem ipsum dolor<br> sit amet enim. Etiam ullamcorper. </p>
@@ -50,12 +63,12 @@
 <section id="section2">
   <div id="features" class="container">
        <div id="seven_nation_army" class="photo_box">
-         <div class="the_white_stripes">
+         <div id="lefttPhoto" class="the_white_stripes">
            <p class="photo_box_text">Chair CLAIR</p>
          </div>
        </div>
        <div id="black_math" class="photo_box">
-         <div class="the_white_stripes">
+         <div id="rightPhoto" class="the_white_stripes">
            <p class="photo_box_text">Chair MARGARITA</p>
          </div>
        </div>
